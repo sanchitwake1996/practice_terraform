@@ -27,6 +27,6 @@ module "instance" {
     instance_type = var.instance_type
     subnet_id = module.new_vpc.pub_sub_id
     vpc_id = module.new_vpc.vpc_id
-    key_pair = "tf-key"
-    project = "cbz"
+    key_pair = var.key
+    project = var.project
 }
